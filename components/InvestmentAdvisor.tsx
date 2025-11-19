@@ -45,7 +45,7 @@ import React, { useState } from 'react';
             
             <div className="mt-6 flex items-center gap-2 bg-white/20 backdrop-blur-sm w-fit px-3 py-1 rounded-full text-sm font-medium">
                 <Sparkles size={14} />
-                <span>Powered by Gemini 2.5</span>
+                <span>Powered by EasyWealth-AI 1.0 (Beta)</span>
             </div>
           </header>
     
