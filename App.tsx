@@ -7,6 +7,7 @@ import InvestmentAdvisor from './components/InvestmentAdvisor';
 import SchemeExplorer from './components/SchemeExplorer';
 import { AppView, RiskLevel } from './types';
 import { User, Bell, Menu, TrendingUp, ShieldAlert } from 'lucide-react';
+import { Analytics } from '@vercel/analytics/react';
 
 function App() {
   const [currentView, setCurrentView] = useState<AppView>(AppView.DASHBOARD);
@@ -123,6 +124,7 @@ function App() {
           {renderContent()}
         </main>
         <Navigation currentView={currentView} onNavigate={setCurrentView} />
+        <Analytics />
       </div>
     </div>
   );
